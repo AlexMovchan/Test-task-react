@@ -1,0 +1,32 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.head-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style: none;
+    background: black;
+    margin: 0;
+}
+
+.head-list li {
+    padding: 10px 0;
+    color: white;
+    cursor: pointer;
+}
+
+.head-list li:hover {
+    background: grey;
+}
+
+.active {
+    background: grey;
+}
+
+.head-list li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}

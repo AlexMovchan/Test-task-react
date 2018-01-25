@@ -1,0 +1,33 @@
+.donate-container {
+    width: 75%;
+    margin: 100px auto;
+}
+
+.lead-footer {
+    margin: auto;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.orange-text {
+    color: #fd5f00;
+}
+
+.bg-warning {
+    background-color: #fd5f00 !important;
+}
+
+.input-group {
+    width: 80px;
+    height: 50px;
+}
+
+.jumbotron {
+    border: 1px solid #b9b9b9;
+}
+
+.progress {
+    border: 1px solid #b9b9b9;
+    margin: 3px 0;
+}

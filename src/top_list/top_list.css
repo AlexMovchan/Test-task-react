@@ -1,0 +1,51 @@
+section {
+    background-color: #b1b1b3;
+}
+.card-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.card-container_footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.card {
+    width: 230px;
+    margin: 10px;
+}
+
+.fa {
+    cursor: pointer
+}
+
+.red {
+    color: red;
+}
+
+.loading-container {
+    height: calc(100vh - 44px);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-container h6 {
+    width: 100%;
+    text-align: center;
+    margin: 25px;
+}
+
+.card-title {
+    font-size: 1rem;
+}
+
+.card-body {
+    display: flex;
+    flex-flow: column;
+    padding: 1.25rem;
+    justify-content: space-between;
+}
