@@ -1,5 +1,6 @@
-section {
-    background-color: #b1b1b3;
+.top-list {
+    background-color: #e1e1e2;
+    padding: 20px 60px;
 }
 .card-container {
     display: flex;
@@ -11,10 +12,8 @@ section {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-}
-.card {
-    width: 230px;
-    margin: 10px;
+    border-top: 1px solid #bfbfbf;
+    padding-top: 10px;
 }
 
 .fa {
@@ -39,8 +38,15 @@ section {
     margin: 25px;
 }
 
+.card {
+    width: 230px;
+    margin: 10px;
+    box-shadow: 0 0 12px 1px black;
+}
+
 .card-title {
     font-size: 1rem;
+    text-align: center;
 }
 
 .card-body {

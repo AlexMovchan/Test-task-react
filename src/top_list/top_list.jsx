@@ -6,8 +6,7 @@ import './top_list.css';
 
 //List of songs component which repeated from JSON data
 let SongsList = (props) => (
-    <section>
-        <hr/>
+    <section className="top-list">
         <h2 className='text-center'>{props.title}</h2>
         <hr/>
         <main className="card-container">
@@ -16,6 +15,7 @@ let SongsList = (props) => (
                     <CardImg top width="170" src={item['im:image'][2].label} />
                     <CardBody>
                         <CardTitle>{item.title.label}</CardTitle>
+                        <hr/>
                         <footer className='card-container_footer'>
                             <Button color="success">Buy {item['im:price'].label}</Button>
                             <Icon name="heart" onClick={props.click} />

@@ -51,24 +51,26 @@ export default class Donate extends Component {
 
     render() {
         return (
-            <main className='donate-container'>
-                <Alert color="success" isOpen={this.state.successAlertIsShow}>Thanks! The sum is over 1k. Lets donate again! </Alert>
-                <Alert color="danger" isOpen={this.state.errorAlertIsShow}>You can't donate a negative value! </Alert>
-                <Tooltip placement="top" isOpen={this.state.tooltipOpen} target="sumProgress" toggle={this.toggle}>${1000 - this.state.donateSum} still needed for this project!</Tooltip>
+            <section class-name="donate">
+                <main className='donate-container'>
+                    <Alert color="success" isOpen={this.state.successAlertIsShow}>Thanks! The sum is over 1k. Lets donate again! </Alert>
+                    <Alert color="danger" isOpen={this.state.errorAlertIsShow}>You can't donate a negative value! </Alert>
+                    <Tooltip placement="top" isOpen={this.state.tooltipOpen} target="sumProgress" toggle={this.toggle}>${1000 - this.state.donateSum} still needed for this project!</Tooltip>
 
-                <Progress color="warning" id='sumProgress' value={this.state.donateSum/1000 * 100} />
-                <Jumbotron>
-                    <h4><span className='orange-text'>Only 3 days left</span> to found this project!</h4>
-                    <p className="lead">Join the {this.state.donatorsCount} other who have already supported this project. Every dollar helps.</p>
-                    <hr className="my-2" />
-                    <div className="lead-footer">
-                        <InputGroup>
-                            <Input placeholder="$" id='donate-input' type="number" step="1" />
-                        </InputGroup>
-                        <Button color="success" onClick={this.donate}>Give Now</Button>
-                    </div>
-                </Jumbotron>
-            </main>
+                    <Progress color="warning" id='sumProgress' value={this.state.donateSum/1000 * 100} />
+                    <Jumbotron>
+                        <h4><span className='orange-text'>Only 3 days left</span> to found this project!</h4>
+                        <p className="lead">Join the {this.state.donatorsCount} other who have already supported this project. Every dollar helps.</p>
+                        <hr className="my-2" />
+                        <div className="lead-footer">
+                            <InputGroup>
+                                <Input placeholder="$" id='donate-input' type="number" step="1" />
+                            </InputGroup>
+                            <Button color="success" onClick={this.donate}>Give Now</Button>
+                        </div>
+                    </Jumbotron>
+                </main>
+            </section>
         )
     }
 }
